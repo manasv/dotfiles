@@ -1,0 +1,22 @@
+# !/bin/bash
+# description: Display cover for the current playing song using notify-send
+
+# get current album
+album=$(ncmpcpp --current-song={%b} 2> /dev/null)
+
+# If album not null display cover
+if [[ -n "$album" ]];then
+        if [[ "$album" = "Album1" ]];then
+                image="/home/manuel/Pictures/notify/album1/cover.png"
+                notify-send -i $image "Now Playing " "$(mpc current)"
+        elif [[ "$album" = "Album2" ]];then
+                image="/home/manuel/Pictures/notify/album2/cover.png"
+        	notify-send -i $image "Now Playing" "$(mpc current)"
+	elif [[ "$album" = "Album3" ]];then
+                image="/home/manuel/Pictures/notify/album3/cover.png"
+                notify-send -i $image "Now Playing" "$(mpc current)"
+        fi
+else
+        image="/home/manuel/Pictures/notify/other/cover.png"
+        notify-send -i $image "Now Playing" "$(mpc current)"
+fi

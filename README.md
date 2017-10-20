@@ -12,7 +12,6 @@ Setup Description
 * Mail client `mutt`
 * Image viewer `feh`
 * Media player `mpv`
-* Music player `ncmpcpp`
 * Program launcher `rofi`
 * PDF viewer `zathura`
 * Text editor `neovim`
