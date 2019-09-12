@@ -3,8 +3,8 @@ call plug#begin('~/.vim/plugged')
 "Look 'n Feel
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'manasv/material-palenight'
 Plug 'nightsense/office'
+Plug 'drewtempelmeyer/palenight.vim'
 
 "Navigation
 Plug 'scrooloose/nerdtree'
@@ -46,7 +46,7 @@ filetype plugin indent on
 "Vim Look
 syntax enable
 set background=dark
-colorscheme base16-material-palenight
+colorscheme palenight
 
 if has("termguicolors")
     set termguicolors
