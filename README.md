@@ -21,10 +21,6 @@ Installation
 # Change directory to dotfiles
 cd dotfiles
 
-# Change branch to macOS
-git checkout macOs
-
-# Now you can install any config you want using [GNU stow]
 # If you dont have stow, you can install it with your package manager
 
 # macOS - homebrew
