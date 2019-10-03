@@ -1,4 +1,0 @@
-*.font: xft:Input Mono:size=11:antialias=true
-*.scrollBar: false
-
-#include "/home/manuel/.xcolors/material-manasv"
